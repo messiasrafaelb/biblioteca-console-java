@@ -33,8 +33,8 @@ public class Library
     }
 
     static public void update(String isbn, String title, String author, int edition) throws BookNotFound {
-        Optional<Book> rmBook = collection.stream().filter(book -> book.getIsbn().equalsIgnoreCase(isbn)).findAny();
-        int index = collection.indexOf(rmBook.orElseThrow(BookNotFound::new));
+        Optional<Book> findBook = collection.stream().filter(book -> book.getIsbn().equalsIgnoreCase(isbn)).findAny();
+        int index = collection.indexOf(findBook.orElseThrow(BookNotFound::new));
         collection.get(index).setTitle(title);
         collection.get(index).setAuthor(author);
         collection.get(index).setEdition(edition);
