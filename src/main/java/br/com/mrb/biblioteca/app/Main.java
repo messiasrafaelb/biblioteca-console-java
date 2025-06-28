@@ -35,7 +35,7 @@ public class Main {
             Library.update("ladfjfaasdlfaj", "jdfhadf", "alskdfaj", 1111);
 
         } catch (BookNotFound e) {
-            System.out.println("Livro não encontrado: " + e);
+            System.out.println(e.getMessage());
         }
     }
 }
