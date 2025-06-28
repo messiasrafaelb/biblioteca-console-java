@@ -6,7 +6,7 @@ public class Book {
     private String title;
     private String author;
     private int edition;
-    private String isbn;
+    private final String isbn;
 
     public Book(String title, String author, int edition, String isbn) {
         this.title = title;
@@ -38,10 +38,6 @@ public class Book {
 
     public void setEdition(int edition) {
         this.edition = edition;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 
     @Override

@@ -64,6 +64,10 @@ public class Main {
                         System.out.print("Digite o nome do autor: ");
                         String author = sc.nextLine();
                         System.out.print("Digite o ano de publicação: ");
+                        int edition = sc.nextInt();
+                        System.out.print("Digite o ano de publicação: ");
+                        Library.update(isbn, title, author, edition);
+                        sc.nextLine();
                         break;
                     default:
                         System.out.println("Entrada inválida, tente novamente.");
