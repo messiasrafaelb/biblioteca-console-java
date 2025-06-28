@@ -17,6 +17,7 @@ public class Library
     }
 
     static public void list() {
+        System.out.println("\033[0;31mTemos " + collection.size() + " livros:\033[0m");
         collection.forEach(System.out::println);
     }
 
